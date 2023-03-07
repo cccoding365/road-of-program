@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>防抖和节流</title>
+</head>
+
+<body>
+  <h2>防抖</h2>
+  <hr>
+  <input id="debounce-input" type="text">
+</body>
+
+<script>
+  const debounce = (fn, delay = 500) => {
+    // 初始化定时器
+    let timer = null
+    return (...args) => {
+      if (timer) {
+        clearTimeout(timer)
+        timer = null
+      } else {
+        // 首次立即执行
+        // fn.apply(this, args)
+      }
+      // 设置定时器
+      timer = setTimeout(() => {
+        fn.apply(this, args)
+      }, delay)
+    }
+  }
+
+  const printInputValue = (e) => {
+    console.log('当前输入的内容是：', e.target.value)
+  }
+
+  document.querySelector('#debounce-input').oninput = debounce(printInputValue)
+
+</script>
+
+</html>
