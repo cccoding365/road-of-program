@@ -54,7 +54,27 @@
 7. 标签模板
 8. 模板字符串的限制
 
-## 字符串的新增方法
+## 四、字符串的新增方法
+
+1. String.fromCodePoint()
+
+ES5 提供`String.fromCharCode()`方法，用于从 Unicode 码点返回对应字符，但是这个方法不能识别码点大于0xFFFF的字符。
+
+ES6 提供了`String.fromCodePoint()`方法，可以识别大于0xFFFF的字符，弥补了`String.fromCharCode()`方法的不足。在作用上，正好与下面的`codePointAt()`方法相反。
+
+2. String.raw()
+
+ES6 还为原生的 String 对象，提供了一个`raw()`方法。该方法返回一个斜杠都被转义（即斜杠前面再加一个斜杠）的字符串，往往用于模板字符串的处理方法。
+
+3. 实例方法：codePointAt()
+4. 实例方法：normalize()
+5. 实例方法：includes(), startsWith(), endsWith()
+6. 实例方法：repeat()
+7. 实例方法：padStart()，padEnd()
+8. 实例方法：trimStart()，trimEnd()
+9. 实例方法：matchAll()
+10. 实例方法：replaceAll()
+11. 实例方法：at()
 
 ## 正则的扩展
 
