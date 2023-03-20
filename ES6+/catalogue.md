@@ -9,6 +9,9 @@
 4. [字符串的扩展](./string.md)
  
 5. [字符串的新增方法](./string-methods.md)
+
+- String.fromCodePoint()
+- String.raw()
  
 6. [正则的扩展](./regex.md)
  
