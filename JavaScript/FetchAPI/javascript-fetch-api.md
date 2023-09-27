@@ -93,22 +93,21 @@ The fetch() returns a promise that rejects when a real failure occurs such as a 
 Suppose that you have a json file that locates on the webserver with the following contents:
 ```json
 [{
-        "username": "john",
-        "firstName": "John",
-        "lastName": "Doe",
-        "gender": "Male",
-        "profileURL": "img/male.png",
-        "email": "john.doe@example.com"
-    },
-    {
-        "username": "jane",
-        "firstName": "Jane",
-        "lastName": "Doe",
-        "gender": "Female",
-        "profileURL": "img/female.png",
-        "email": "jane.doe@example.com"
-    }
-]
+    "username": "john",
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "Male",
+    "profileURL": "img/male.png",
+    "email": "john.doe@example.com"
+},
+{
+    "username": "jane",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "gender": "Female",
+    "profileURL": "img/female.png",
+    "email": "jane.doe@example.com"
+}]
 ```
 The following shows the HTML page:
 ```html
