@@ -15,7 +15,7 @@
 pnpm i -D @types/wechat-miniprogram @uni-helper/uni-app-types
 ```
 - 配置 tsconfig.json
-```json
+```jsonc
 {
     "compilerOptions": {
         "types": [
@@ -43,7 +43,7 @@ pnpm i -D @types/wechat-miniprogram @uni-helper/uni-app-types
 pnpm i @dcloudio/uni-ui
 ```
 2. 组件自动引入
-```json
+```jsonc
 // pages.json
 {
     "easycom": {
@@ -62,7 +62,7 @@ pnpm i @dcloudio/uni-ui
 ```bash
 pnpm i -D @uni-helper/uni-ui-types
 ```
-```json
+```jsonc
 // tsconfig.json
 {
     "compilerOptions": {
